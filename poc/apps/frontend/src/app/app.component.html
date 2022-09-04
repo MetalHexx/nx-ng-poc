@@ -1,5 +1,3 @@
 <h1>{{ title }}</h1>
-<ul>
-  <li class="todo" *ngFor="let todo of todos">{{ todo.title }}</li>
-</ul>
+<poc-todos [todos]="todos"></poc-todos>
 <button id="add-todo" (click)="addTodo()">Add todo</button>

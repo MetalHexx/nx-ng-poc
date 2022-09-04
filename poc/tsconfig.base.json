@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@poc/shared-data": ["libs/shared-data/src/index.ts"]
+      "@poc/shared-data": ["libs/shared-data/src/index.ts"],
+      "@poc/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
