@@ -9,7 +9,7 @@ import { Todo } from '@poc/data-models';
 })
 export class AppComponent {
   title = 'Welcome frontend';
-  todos: Todo[] = [{ title: 'Todo1' }, { title: 'Todo2' }];
+  todos: Todo[] = [];
 
   constructor(private http: HttpClient) {
     this.fetch();
