@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Todo } from '@poc/shared-data';
+import { Todo } from '@poc/data-models';
 
 @Injectable()
 export class AppService {

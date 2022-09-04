@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { Todo } from '@poc/shared-data';
+import { Todo } from '@poc/data-models';
 
 @Component({
   selector: 'poc-root',

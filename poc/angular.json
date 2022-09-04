@@ -5,7 +5,7 @@
     "frontend": "apps/frontend",
     "frontend-e2e": "apps/frontend-e2e",
     "nest-api": "apps/nest-api",
-    "shared-data": "libs/shared-data",
+    "data-models": "libs/data-models",
     "ui": "libs/ui"
   }
 }

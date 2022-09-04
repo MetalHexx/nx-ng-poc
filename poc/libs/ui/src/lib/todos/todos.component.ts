@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Todo } from '@poc/shared-data'
+import { Todo } from '@poc/data-models'
 
 @Component({
   selector: 'poc-todos',
