@@ -1,8 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-
-interface Todo {
-  title: string;
-}
+import { Todo } from '@poc/shared-data';
 
 @Component({
   selector: 'poc-root',
@@ -13,9 +11,17 @@ export class AppComponent {
   title = 'Welcome core';
   todos: Todo[] = [{ title: 'Todo1' }, { title: 'Todo2' }];
 
+  constructor(private http: HttpClient) {
+    this.fetch();
+  }
+
+  fetch() {
+    this.http.get<Todo[]>('/api/todos').subscribe((t) => (this.todos = t));
+  }
+
   addTodo() {
-    this.todos.push({
-      title: `New todo ${Math.floor(Math.random() * 1000)}`,
+    this.http.post('/api/todos', {}).subscribe(() => {
+      this.fetch();
     });
   }
 }
