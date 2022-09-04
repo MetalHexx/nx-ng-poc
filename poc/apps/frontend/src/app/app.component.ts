@@ -8,7 +8,7 @@ import { Todo } from '@poc/data-models';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Welcome core';
+  title = 'Welcome frontend';
   todos: Todo[] = [{ title: 'Todo1' }, { title: 'Todo2' }];
 
   constructor(private http: HttpClient) {
