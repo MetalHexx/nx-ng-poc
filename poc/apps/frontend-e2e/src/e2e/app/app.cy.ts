@@ -1,4 +1,4 @@
-import { getGreeting } from '../support/app.po';
+import { getGreeting } from './app.po';
 
 describe('frontend', () => {
   beforeEach(() => cy.visit('/'));
